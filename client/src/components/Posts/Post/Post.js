@@ -26,7 +26,10 @@ const Post = ({post, setCurrentId}) => {
             </div>
             <Typography className={classes.title} gutterBottom variant="h5" component="h2">{post.description}</Typography>
             <CardContent>
+                <Typography variant="body2" color="textSecondary" component="p">{post.price}</Typography>
                 <Typography variant="body2" color="textSecondary" component="p">{post.screen}</Typography>
+                <Typography variant="body2" color="textSecondary" component="p">{post.processor}</Typography>
+                <Typography variant="body2" color="textSecondary" component="p">{post.ram}</Typography>
             </CardContent>
             <CardActions className={classes.cardActions}>
                 <Button size="small" color="primary" onClick={() => dispatch(deletePost(post._id))}><DeleteIcon fontSize="small" /> Delete</Button>
