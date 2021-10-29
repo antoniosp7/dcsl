@@ -16,5 +16,5 @@ El despligue es sencillo al haber integrado docker, nos bastará con realizar tr
 2. docker build -t "api-server" ./server/
 3. docker-compose up
 
-Esto no desplegará la aplicación en la dirección **localhost:3000**
+Esto desplegará la aplicación en la dirección **localhost:3000**
 
